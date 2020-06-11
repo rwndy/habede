@@ -1,0 +1,94 @@
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: rgb(21, 32, 43);
+  font-family: 'Lato', sans-serif;
+  height: 100%;
+}
+
+.main-page-video {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+
+.main-wrap--title {
+  margin-bottom: 3rem;
+}
+
+.main-wrap--title > h4 {
+  font-size: 4rem;
+  color: #fff;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.main-wrap--btn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10rem;
+}
+
+.main-btn {
+  width: 200px;
+  height: 43px;
+  border: 1px solid #fff;
+  background-color: rgb(21, 32, 43);
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+.wrap-video {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.wrap-video > video {
+  width: 100%;
+  height: auto;
+}
+
+.wrap-video.video-hide {
+  display: none;
+}
+
+.video-info {
+  font-size: 2rem;
+  line-height: 1.5;
+  color: #fff;
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 768px) {
+  .main-wrap--title > h4 {
+    font-size: 2rem;
+  }
+
+  .main-wrap--title {
+    margin-top: 10.5rem;
+  }
+
+  .video-info {
+    font-size: 1.6rem;
+  }
+
+  .main-wrap--btn {
+    margin-bottom: 5rem;
+  }
+
+  .wrap-video {
+    margin-bottom: 5rem;
+  }
+}
